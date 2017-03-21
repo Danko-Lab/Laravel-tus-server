@@ -28,7 +28,7 @@ Route::any("upload/{file}", function($file){
 /**
  * Implement the TusUpload function using the Tus protocol.
  */
-public static function upload( $file ){
+public static function TusUpload( $file ){
    $request = \Illuminate\Http\Request::createFromGlobals();
    $tmp_dir = ini_get('upload_tmp_dir') ? ini_get('upload_tmp_dir') : sys_get_temp_dir();
 	
